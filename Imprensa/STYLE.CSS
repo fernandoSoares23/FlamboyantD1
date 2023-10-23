@@ -1,0 +1,642 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container2{
+	height: 30%; 
+	width: 30%; 
+	flex-direction: row;
+  justify-content: center;
+}
+.container3{
+	height: 30%; 
+	width: 30%; 
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container4{
+	height: 30%; 
+	width: 50%; 
+	flex-direction: row;
+  justify-content: center;
+}
+
+.container5{
+	height: 30%; 
+	width: 25%; 
+	flex-direction: row;
+  justify-content: center;
+}
+
+#blob{
+    width: 180px;
+    height: 180px;
+    background-color: #ff0000;
+    position: absolute;
+    z-index: -1;
+    filter: blur(120px);
+
+}
+.text2 {
+  font-size: 20;
+  color: black;
+  font-weight: bold;
+}
+.container-perfil {
+  font-size: 10;
+  background-color: rgb(255, 255, 255);
+  width: 75%;
+  justify-content: center;
+  height: 100%;
+  border-radius: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  filter: drop-shadow(4px 4px 6px rgb(0, 0, 0));
+  
+  
+}
+.per {
+
+  align-self: center; 
+  height: 75%;
+  width: 75%;
+  border-radius: 50%;
+  margin-right: 10%;
+  margin-left: 10%;
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.384));
+}
+.noggers {
+  font-family: Raleway;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+}
+
+.noggers::before {
+  background-color: rgba(255, 0, 0, 0.342);
+  bottom: 7%;
+  content: "";
+  display: block;
+  height: 0.6em;
+  width: 29em;
+  left: -3%;
+  position: absolute;
+  z-index: -1;
+}
+
+.titlemvv {
+  font-family: Raleway;
+  letter-spacing: .15em;
+}
+
+<!---------------FOOTER---------------------->
+
+.bg {
+  background-color: rgb(255, 255, 255);
+}
+
+.paragraf {
+  text-align: justify;
+  color:white;
+  font-family: cursive;
+}
+
+.paragrafs {
+  color: rgb(255, 0, 0);
+  text-align: center;
+  font-family: cursive;
+}
+
+.top {
+  text-align: justify;
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+}
+
+.top:hover {
+  color: rgb(197, 135, 0);
+}
+
+.Nav-title {
+
+  font-family: cursive;
+  font-size: 20;
+  margin-left: 10%;
+
+}
+
+<!------------------NAV BAR----------------------------->
+
+.green
+{
+    background-color: rgb(255, 255, 255);
+}
+/* Defina flexbox no contêiner pai */
+div.containera {
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos com espaço entre eles */
+  align-items: center;
+  font-family: Raleway;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  filter: drop-shadow(4px 4px 6px black);
+  padding: 10px; /* Adicione algum espaço ao redor dos elementos */
+}
+
+
+div.containera a {
+  color: #020703;
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: bolder;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+div.borderXwidth a:before,
+div.borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #ff0000;
+  transition: all 0.3s;
+}
+
+div.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderXwidth a:hover:before,
+div.borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+figure { width: 90%; min-width: 17.5em; margin:0 auto;}
+figcaption { font: 120% sans-serif; text-align: center;}
+.boxVideo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    margin:0 auto;
+}
+.boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilize os títulos */
+.titulo {
+  cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse sobre o título */
+}
+
+/* Ocultar as descrições inicialmente */
+.descricao {
+  display: none;
+}
+
+/* Mostrar as descrições quando o mouse estiver sobre os títulos */
+.titulo:hover + .descricao {
+  display: block;
+}
+
+.noggers2 {
+  font-family: Raleway;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3%;
+}
+
+.noggers2::before {
+  background-color: rgba(255, 0, 0, 0.342);
+  bottom: 7%;
+  content: "";
+  display: block;
+  height: 0.6em;
+  width: 15em;
+  left: -5%;
+  position: absolute;
+  z-index: -1;
+}
+
+div.flaad{
+position: relative;
+top: 1%;
+left: 0%;
+width: 100%;
+height: 5%;
+
+}
+
+  /*Calma, garotinho! Animação*/
+  .zoom-on-hover {
+    transition: transform 0.3s ease; 
+}
+
+
+.zoom-on-hover:hover {
+    transform: scale(1.1);
+}
+ /*The End*/
+.noggers3 {
+  font-family: Raleway;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3%;
+}
+
+.noggers3::before {
+  background-color: rgba(255, 0, 0, 0.342);
+  bottom: 7%;
+  content: "";
+  display: block;
+  height: 0.6em;
+  width: 13em;
+  left: -5%;
+  position: absolute;
+  z-index: -1;
+}
+
+ /* Defina a cor das setas do carrossel como preto */
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+     background-color: #000; /* Cor preta */
+ }
+
+ /* Defina a cor de fundo do botão como preta */
+ .carousel-control-prev,
+ .carousel-control-next {
+     background-color: #000; /* Cor preta */
+ }
+
+ .noggers15 {
+  font-family: Raleway;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3%;
+  padding-bottom: 5%;
+}
+
+.noggers15::before {
+  background-color: rgba(255, 0, 0, 0.342);
+  bottom: 7%;
+  content: "";
+  display: block;
+  height: 0.6em;
+  width: 8em;
+  left: -5%;
+  position: absolute;
+  z-index: -1;
+  padding-bottom: 5%;
+  margin-bottom: 9%;
+}
+
+.container100 {
+  display: flex; /* Usar flexbox para o layout */
+  align-items: center; /* Alinhar verticalmente o conteúdo no centro */
+}
+
+/* Estilizando a imagem */
+.imagem100 {
+  flex: 1; /* A imagem ocupa 1 parte do flexbox */
+  max-width: 50%; /* Definindo a largura máxima da imagem */
+}
+
+/* Estilizando o texto */
+.texto100 {
+  flex: 1; /* O texto ocupa 1 parte do flexbox */
+  text-align: justify; /* Justificar o texto à direita */
+  padding: 200px; /* Adicionar um espaçamento interno para melhorar a aparência */
+
+  font-size: 22;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container200 {
+  display: flex; /* Usar flexbox para o layout */
+  align-items: center; /* Alinhar verticalmente o conteúdo no centro */
+  flex-direction: row-reverse; /* Inverter a direção dos elementos */
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Estilizando o texto */
+.texto200 {
+  flex: 1; /* O texto ocupa 1 parte do flexbox */
+  text-align: justify; /* Justificar o texto à esquerda */
+  padding: 200px; /* Adicionar um espaçamento interno para melhorar a aparência */
+
+  font-size: 15;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Estilizando a imagem */
+.imagem200 {
+  flex: 1; /* A imagem ocupa 1 parte do flexbox */
+  max-width: 50%; /* Definindo a largura máxima da imagem */
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10;
+  padding-bottom: 0;
+}
+
+.noggers100 {
+  font-family: Raleway;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+}
+
+.noggers100::before {
+  background-color: rgba(255, 0, 0, 0.342);
+  bottom: 1%;
+  content: "";
+  display: block;
+  height: 0.6em;
+  width: 7.5em;
+  left: -5%;
+  position: absolute;
+  z-index: -1;
+  padding-bottom: 5%;
+  margin-bottom: 15%;
+}
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  width: 200px;
+  height: 250px;
+  margin: 40px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.team-info {
+  margin-top: 10px;
+}
+
+.team-name {
+  font-weight: bold;
+}
+
+.team-title {
+  font-style: italic;
+}
+
+.noggers1012 {
+  font-family: Raleway;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+  padding-right: 0%;
+}
+
+.noggers1012::before {
+  background-color: rgba(255, 0, 0, 0.342);
+  bottom: 5%;
+  content: "";
+  display: block;
+  height: 0.6em;
+  width: 7.5em;
+  left: 450%;
+  position: absolute;
+  z-index: -1;
+  padding-bottom: 15%;
+  margin-bottom: 19%;
+  text-align: center;
+}
+
+.noggers34 {
+  font-family: Raleway;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+}
+
+.noggers34::before {
+  background-color: rgba(255, 0, 0, 0.342);
+  bottom: 7%;
+  content: "";
+  display: block;
+  height: 0.6em;
+  width: 5em;
+  left: -5%;
+  position: absolute;
+  z-index: -1;
+}
+
+.noggers455 {
+  font-family: Raleway;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.noggers455::before {
+  background-color: rgba(255, 0, 0, 0.342);
+  bottom: 7%;
+  content: "";
+  display: block;
+  height: 0.6em;
+  width: 6.7em;
+  left: 435;
+  position: absolute;
+  z-index: -1;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px; /* Ajuste o tamanho conforme necessário */
+  margin: 0 auto;
+}
+
+.slide {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slide a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adicione este código ao seu arquivo CSS (styles.css) */
+
+/* Estilo do portfólio */
+.portfolio-item {
+  background-color: rgba(255, 255, 255, 0.907); /* Cor de fundo vermelho transparente */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.portfolio-details {
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  height: 100%;
+}
+
+.portfolio-details h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #000000;
+}
+
+.portfolio-details p {
+  font-size: 1rem;
+
+}
+
+.portfolio-details a {
+  display: inline-block;
+  background-color: rgb(255, 255, 255); /* Cor de fundo do botão */
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  
+}
+
+.portfolio-details a:hover {
+  background-color: rgb(255, 0, 0); /* Cor de fundo do botão no hover */
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+footer {
+  margin-top: auto;
+  z-index: 100;
+}
+
+/* Estilo para sobreposição do fundo */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fundo escuro semi-transparente */
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+/* Estilo para a caixa de notícias */
+.news-box {
+  background: rgb(122, 23, 23);
+  max-width: 80%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.3s, transform 0.3s;
+}

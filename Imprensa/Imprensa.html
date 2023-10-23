@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprensa - Flamboyant</title>
+    <link rel="shortcut icon" href="../logotipo.png">
+    <link rel="stylesheet" href="../Imprensa/STYLE.CSS">
+    <link rel="stylesheet" type="text/css" href="FOOTER/smart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
+        type="text/css">
+
+    <style>
+        /* Estilos para a sobreposição da notícia */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+        }
+
+        .news-box {
+            background-color: #fff;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .news-content {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <section id="navbar">
+        <div class="containera green borderXwidth"
+            style="background-color: rgb(255, 255, 255); width: 100%; filter: drop-shadow(4px 4px 6px black);">
+            <div class="logo-and-links">
+                <img src="../logo.png" style="height: 9%; width: 9%; margin-right: 70%;" alt="logo">
+                <a href="../index.html">Retornar à Página Inicial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notícias da Flamboyant e seus clientes -->
+    <section id="noticias">
+        <div class="container" style="padding-top: 10%;">
+            <div class="text-center mt-4" style="padding-bottom: 5%;">
+                <span class="noggers text-uppercase" style="align-self: center; justify-content: center;"> Notícias da Flamboyant e seus clientes</span>
+            </div>
+            <div class="col-md-12" style="padding-left: 16%; padding-bottom: 10%;">
+                <div class="portfolio-item" style="width: 80%;">
+                    <div class="portfolio-image">
+                        <img src="./CarecaMala.png" alt="Projeto 2">
+                    </div>
+                    <div class="portfolio-details" style="height: 200px; width: 100%;">
+                        <h3>UConnect Idiomas é eleita a melhor escola de inglês de Osasco</h3>
+                        <p>Eleita em votação online, através do voto popular, a escola foi eleita como a melhor da região de Osasco no ensino de inglês.</p>
+                        <a href="../docs/Uconnect é eleita a melhor escola de idiomas de Osasco (1).pdf" target="_blank" class="btn btn-danger">Abrir Documento</a>
+                    </div>
+                </div>
+            </div>
+                <!-- Adicione mais notícias aqui -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg text-white" style="background-color: black; padding: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="mb-4 font-weight-bold" style="color: rgb(255, 255, 255);">Contato</h5>
+                    <p class="paragraf" style="color: floralwhite;">
+                        <i class="fas fa-home mr-3"></i> Av. Vital Brasil, 1000 - Butantã, São Paulo - SP, 05503-001
+                    </p>
+                    <p class="paragraf" style="color: floralwhite;">
+                        <i class="fas fa-envelope mr-3"></i> flamboyantcomunicacao@gmail.com
+                    </p>
+                    <p class="paragraf" style="color: floralwhite;">
+                        <i class="fas fa-mobile mr-3"></i> +55 (11) 4799-1677
+                    </p>
+                    <a href="./Imprensa/Imprensa.html" style="color: white; font-weight: bolder;">Imprensa</a>
+                </div>
+                <div class="col-md-6" style="padding-right: 5%;">
+                    <h5 class="mb-4 font-weight-bold" style="color: rgb(255, 255, 255);">Envie sua Mensagem</h5>
+                    <form action="action_page.php">
+                        <div class="form-group">
+                            <input type="text" id="fname" name="firstname" class="form-control" placeholder="Nome Completo">
+                        </div>
+                        <div class="form-group" style="padding-top: 2%;">
+                            <input type="text" id="lname" name="lastname" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group" style="padding-top: 2%;">
+                            <textarea id="subject" name="subject" class="form-control" placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="form-group" style="padding-top: 2%;">
+                            <input type="submit" value="Enviar" class="btn btn-danger">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+
+
+</html>
